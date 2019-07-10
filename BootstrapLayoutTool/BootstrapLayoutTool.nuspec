@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool</projectUrl>
+    <iconUrl>https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial Commit</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>Kentico MVC Page Builder Bootstrap Sections</tags>
+  </metadata>
+  <files>
+	<file src="Views\Shared\Sections\BootstrapLayoutTool\_Bootstrap4LayoutTool.cshtml" target = "Views\Shared\Sections\BootstrapLayoutTool" />
+  </files>
+</package>
