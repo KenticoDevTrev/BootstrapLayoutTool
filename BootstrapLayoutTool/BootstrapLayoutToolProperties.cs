@@ -65,7 +65,7 @@ Remove Gutters: no-gutters")]
 
         // Column 1
         [EditingComponent(DropDownComponent.IDENTIFIER, Order = 3, Label = "1st Column Size", Tooltip = ColumnWidthTooltip)]
-        [EditingComponentProperty(nameof(DropDownProperties.DataSource),ColumnWidthOptions)]
+        [EditingComponentProperty(nameof(DropDownProperties.DataSource), ColumnWidthOptions)]
         public string Column1Width { get; set; } = DefaultColumnWidth;
 
         [EditingComponent(TextInputComponent.IDENTIFIER, Order = 4, Label = "1st Column Additional CSS", Tooltip = AdditionalCSSToolTip)]
@@ -159,6 +159,12 @@ Remove Gutters: no-gutters")]
         [EditingComponent(TextInputComponent.IDENTIFIER, Order = 26, Label = "12th Column Additional CSS", Tooltip = AdditionalCSSToolTip)]
         public string Column12AdditionalCSS { get; set; }
 
+        [EditingComponent(TextAreaComponent.IDENTIFIER, Order = 27, Label = "Html Before Section", Tooltip = "Places Html before the sections content")]
+        public string HtmlBefore { get; set; }
+
+        [EditingComponent(TextAreaComponent.IDENTIFIER, Order = 28, Label = "Html After Section", Tooltip = "Places Html after the sections content")]
+        public string HtmlAfter { get; set; }
+
         /// <summary>
         /// Helper to get the Column Width
         /// </summary>
@@ -209,14 +215,14 @@ Remove Gutters: no-gutters")]
                     break;
             }
             // Handle the 0 or if no item is set to default properly
-            switch(Value)
+            switch (Value)
             {
                 case "0":
                     return ColumnCSSPrepend;
                 case "":
-                    return ColumnCSSPrepend+"-12";
+                    return ColumnCSSPrepend + "-12";
                 default:
-                    return ColumnCSSPrepend+Value;
+                    return ColumnCSSPrepend + Value;
             }
         }
 

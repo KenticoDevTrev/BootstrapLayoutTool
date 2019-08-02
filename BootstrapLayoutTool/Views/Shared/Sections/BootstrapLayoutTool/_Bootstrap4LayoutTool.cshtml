@@ -1,5 +1,6 @@
 ﻿@model ComponentViewModel<BootstrapLayoutTool.Bootstrap4LayoutToolProperties>
 
+@Model.Raw(Model.HtmlBefore)
 <div class="row @Model.Properties.ContainerCSS">
     @for (int Column = 1; Column <= Model.Properties.Columns; Column++)
     {
@@ -8,3 +9,4 @@
     </div>
     }
 </div>
+@Model.Raw(Model.HtmlAfter)
