@@ -1,9 +1,10 @@
 ﻿using Kentico.Forms.Web.Mvc;
 using Kentico.PageBuilder.Web.Mvc;
+using PageBuilderContainers;
 
 namespace BootstrapLayoutTool
 {
-    public class Bootstrap4LayoutToolProperties : ISectionProperties
+    public class Bootstrap4LayoutToolProperties : IPageBuilderContainerProperties , ISectionProperties
     {
         const string AdditionalCSSToolTip = @"Additional Classes to append to the Column.  
 
@@ -164,6 +165,19 @@ Remove Gutters: no-gutters")]
 
         [EditingComponent(TextAreaComponent.IDENTIFIER, Order = 28, Label = "Html After Section", Tooltip = "Places Html after the sections content")]
         public string HtmlAfter { get; set; }
+
+        [EditingComponent(PageBuilderContainerSelectorComponent.IDENTIFIER, Order = 990, Label = "Container Name")]
+        public string ContainerName { get; set; }
+
+        [EditingComponent(TextInputComponent.IDENTIFIER, Order = 991, Label = "Container Title", Tooltip = "Container must have {% ContainerTitle %}")]
+        public string ContainerTitle { get; set; }
+
+        [EditingComponent(TextInputComponent.IDENTIFIER, Order = 992, Label = "Container CSS Class", Tooltip = "Container must have {% ContainerCSSClass %}")]
+        public string ContainerCSSClass { get; set; }
+
+        [EditingComponent(TextAreaComponent.IDENTIFIER, Order = 993, Label = "Container Custom Content", Tooltip = "Container must have {% ContainerCustomContent %}")]
+
+        public string ContainerCustomContent { get; set; }
 
         /// <summary>
         /// Helper to get the Column Width
