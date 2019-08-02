@@ -1,12 +1,15 @@
 ﻿@model ComponentViewModel<BootstrapLayoutTool.Bootstrap4LayoutToolProperties>
 
-@Model.Raw(Model.HtmlBefore)
+@Html.PageBuilderContainerBefore(Model.Properties)
+
+@Html.Raw(Model.Properties.HtmlBefore)
 <div class="row @Model.Properties.ContainerCSS">
     @for (int Column = 1; Column <= Model.Properties.Columns; Column++)
     {
-    <div class="@Model.Properties.GetColumnBootstrapClass(Column) @Model.Properties.GetColumnAdditionalCSS(Column)">
-        @Html.Kentico().WidgetZone()
-    </div>
+        <div class="@Model.Properties.GetColumnBootstrapClass(Column) @Model.Properties.GetColumnAdditionalCSS(Column)">
+            @Html.Kentico().WidgetZone()
+        </div>
     }
 </div>
-@Model.Raw(Model.HtmlAfter)
+@Html.Raw(Model.Properties.HtmlAfter)
+@Html.PageBuilderContainerAfter(Model.Properties)
