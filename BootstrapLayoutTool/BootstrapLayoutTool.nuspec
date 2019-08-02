@@ -7,14 +7,19 @@
     <authors>$author$</authors>
     <owners>$author$</owners>
     <projectUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool</projectUrl>
-    <iconUrl>https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico</iconUrl>
+    <iconUrl>http://www.kentico.com/favicon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Initial Commit</releaseNotes>
+    <releaseNotes></releaseNotes>
     <copyright>Copyright 2019</copyright>
-    <tags>Kentico MVC Page Builder Bootstrap Sections</tags>
+    <tags></tags>
   </metadata>
   <files>
-	<file src="Views\Shared\Sections\BootstrapLayoutTool\_Bootstrap4LayoutTool.cshtml" target = "Views\Shared\Sections\BootstrapLayoutTool" />
+  <!-- Include the compiled views dll -->
+  <file src="bin\BootstrapLayoutTool.Kentico.MVC.Views.dll" target = "lib\net461" />
+  
+  <!-- Sample of how to include this file in the Content of the Nuget, this would cause the SampleIncludeFile.txt to be copied to the SampleResource folder in the project you import the NuGet package in
+	<file src="SampleResource\SampleIncludedFile.txt" target = "Content\SampleResource" />
+	-->
   </files>
 </package>
