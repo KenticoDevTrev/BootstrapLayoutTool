@@ -13,7 +13,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BootstrapLayoutTool.Kentico.MVC.Views</RootNamespace>
-    <AssemblyName>BootstrapLayoutTool.Kentico.MVC.Views</AssemblyName>
+    <AssemblyName>BootstrapLayoutTool.PageBuilderContainered.Kentico.MVC.Views</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -574,7 +574,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BootstrapLayoutTool\BootstrapLayoutTool.csproj">
-      <Project>{60d45549-bb62-4999-8f29-987b58b33127}</Project>
+      <Project>{8cf57736-45ef-4472-bd82-beccc2f838bb}</Project>
       <Name>BootstrapLayoutTool</Name>
     </ProjectReference>
   </ItemGroup>

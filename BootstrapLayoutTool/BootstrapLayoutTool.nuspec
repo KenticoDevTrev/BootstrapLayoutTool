@@ -6,7 +6,7 @@
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <projectUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool</projectUrl>
+    <projectUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool/tree/PageBuilderContainerizedBootstrapLayout</projectUrl>
     <iconUrl>http://www.kentico.com/favicon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
@@ -14,6 +14,10 @@
     <copyright>Copyright 2019</copyright>
     <tags></tags>
   </metadata>
+  <dependencies>
+    <dependency id="PageBuilderContainers.Kentico.MVC" version="12.0.0" />
+	<dependency id="Kentico.Libraries" version="12.0.29" />
+  </dependencies>
   <files>
   <!-- Include the compiled views dll -->
   <file src="bin\BootstrapLayoutTool.Kentico.MVC.Views.dll" target = "lib\net461" />
