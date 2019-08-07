@@ -4,7 +4,7 @@ using PageBuilderContainers;
 
 namespace BootstrapLayoutTool
 {
-    public class Bootstrap4LayoutToolProperties : IPageBuilderContainerProperties , ISectionProperties
+    public class Bootstrap4LayoutToolProperties : IPageBuilderContainerProperties, IHtmlBeforeAfterContainerProperties, ISectionProperties
     {
         const string AdditionalCSSToolTip = @"Additional Classes to append to the Column.  
 
@@ -160,12 +160,6 @@ Remove Gutters: no-gutters")]
         [EditingComponent(TextInputComponent.IDENTIFIER, Order = 26, Label = "12th Column Additional CSS", Tooltip = AdditionalCSSToolTip)]
         public string Column12AdditionalCSS { get; set; }
 
-        [EditingComponent(TextAreaComponent.IDENTIFIER, Order = 27, Label = "Html Before Section", Tooltip = "Places Html before the sections content")]
-        public string HtmlBefore { get; set; }
-
-        [EditingComponent(TextAreaComponent.IDENTIFIER, Order = 28, Label = "Html After Section", Tooltip = "Places Html after the sections content")]
-        public string HtmlAfter { get; set; }
-
         [EditingComponent(PageBuilderContainerSelectorComponent.IDENTIFIER, Order = 990, Label = "Container Name")]
         public string ContainerName { get; set; }
 
@@ -178,6 +172,12 @@ Remove Gutters: no-gutters")]
         [EditingComponent(TextAreaComponent.IDENTIFIER, Order = 993, Label = "Container Custom Content", Tooltip = "Container must have {% ContainerCustomContent %}")]
 
         public string ContainerCustomContent { get; set; }
+
+        [EditingComponent(TextAreaComponent.IDENTIFIER, Order = 994, Label = "Html Before Section", Tooltip = "Places Html before the sections content")]
+        public string HtmlBefore { get; set; }
+
+        [EditingComponent(TextAreaComponent.IDENTIFIER, Order = 995, Label = "Html After Section", Tooltip = "Places Html after the sections content")]
+        public string HtmlAfter { get; set; }
 
         /// <summary>
         /// Helper to get the Column Width

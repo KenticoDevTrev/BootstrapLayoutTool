@@ -557,6 +557,7 @@
   </Target>
   <Import Project="packages\Kentico.AspNet.Mvc.12.0.29\build\Kentico.AspNet.Mvc.targets" Condition="Exists('packages\Kentico.AspNet.Mvc.12.0.29\build\Kentico.AspNet.Mvc.targets')" />
   <PropertyGroup>
-    <PostBuildEvent>(robocopy "$(SolutionDir)ToolsMVC\Views\Shared\Sections\BootstrapLayoutTool" "$(ProjectDir)Views\Shared\Sections\BootstrapLayoutTool") ^&amp; IF %25ERRORLEVEL%25 LEQ 1 exit 0</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
