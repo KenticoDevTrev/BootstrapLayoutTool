@@ -429,9 +429,11 @@
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
-    <Reference Include="PageBuilderContainers.Kentico.MVC, Version=12.0.0.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\PageBuilderContainers.Kentico.MVC.12.0.0.1\lib\net461\PageBuilderContainers.Kentico.MVC.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="PageBuilderContainers.Kentico.MVC, Version=12.29.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PageBuilderContainers.Kentico.MVC.12.29.0.1\lib\net461\PageBuilderContainers.Kentico.MVC.dll</HintPath>
+    </Reference>
+    <Reference Include="PageBuilderContainers.Kentico.MVC.Views, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\PageBuilderContainers.Kentico.MVC.12.29.0.1\lib\net461\PageBuilderContainers.Kentico.MVC.Views.dll</HintPath>
     </Reference>
     <Reference Include="PayPal, Version=1.8.0.0, Culture=neutral, PublicKeyToken=5b4afc1ccaef40fb, processorArchitecture=MSIL">
       <HintPath>packages\PayPal.1.8.0\lib\net451\PayPal.dll</HintPath>
@@ -555,6 +557,7 @@
   </Target>
   <Import Project="packages\Kentico.AspNet.Mvc.12.0.29\build\Kentico.AspNet.Mvc.targets" Condition="Exists('packages\Kentico.AspNet.Mvc.12.0.29\build\Kentico.AspNet.Mvc.targets')" />
   <PropertyGroup>
-    <PostBuildEvent>(robocopy "$(SolutionDir)ToolsMVC\Views\Shared\Sections\BootstrapLayoutTool" "$(ProjectDir)Views\Shared\Sections\BootstrapLayoutTool") ^&amp; IF %25ERRORLEVEL%25 LEQ 1 exit 0</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>

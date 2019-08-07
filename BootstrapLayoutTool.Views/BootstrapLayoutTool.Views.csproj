@@ -558,7 +558,8 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Shared\Sections\BootstrapLayoutTool\_Bootstrap4LayoutTool.cshtml" />
+    <EmbeddedResource Include="Views\Shared\Sections\BootstrapLayoutTool\_Bootstrap4LayoutTool.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -569,15 +570,7 @@
   <ItemGroup>
     <Analyzer Include="..\packages\AWSSDK.S3.3.1.9.0\analyzers\dotnet\cs\AWSSDK.S3.CodeAnalysis.dll" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="obj\Debug\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\BootstrapLayoutTool\BootstrapLayoutTool.csproj">
-      <Project>{8cf57736-45ef-4472-bd82-beccc2f838bb}</Project>
-      <Name>BootstrapLayoutTool</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
