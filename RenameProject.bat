@@ -1,14 +1,16 @@
 @echo off
-set /p ToolName="Enter ToolName (a-Z_):"
-set /p Prefix="Enter Assembly Prefix (a-Z_.), usually Company (ex 'HBS.'):"
-set /p PostFix="Enter Assembly Postfix (a-Z_.) (ex '.Kentico.MVC'):"
-set /p GitHubUrl="Enter GitHub Url:"
-set /p Tags="Enter NuGet Tags (space separated):"
-set /p AssemblyTitle="Enter Assembly Title (no double quotes):"
-set /p AssemblyDescription="Enter Assembly Description (no double quotes):"
-set /p AssemblyCompany="Enter Assembly Company (no double quotes):"
-set /p AssemblyProduct="Enter Assembly Product Name (no double quotes):"
-set /p AssemblyCopyright="Enter Assembly Copyright (no double quotes):"
+echo --INSTRUCTIONS--
+echo Do not use any of these characters: " ' @ $ # `, if you wish to use any of these you must do so manually after this script is done.
+set /p ToolName="Enter ToolName (a-Z_): "
+set /p Prefix="Enter Assembly Prefix (a-Z_.), usually Company (ex 'HBS.'): "
+set /p PostFix="Enter Assembly Postfix (a-Z_.) (ex '.Kentico.MVC'): "
+set /p GitHubUrl="Enter GitHub Url: "
+set /p Tags="Enter NuGet Tags (space separated): "
+set /p AssemblyTitle="Enter Assembly Title: "
+set /p AssemblyDescription="Enter Assembly Description: "
+set /p AssemblyCompany="Enter Assembly Company: "
+set /p AssemblyProduct="Enter Assembly Product Name: "
+set /p AssemblyCopyright="Enter Assembly Copyright: "
 
 cd ShareableComponentBoilerplate.Views
 cd Views
@@ -56,8 +58,9 @@ powershell -Command "(gc ShareableComponentBoilerplate.csproj) -replace 'Shareab
 rename ShareableComponentBoilerplate.csproj %ToolName%.csproj
 
 powershell -Command "(gc ShareableComponentBoilerplate.nuspec) -replace 'CompanyName.ShareableComponentBoilerplate', '%Prefix%%ToolName%' | Out-File -encoding ASCII ShareableComponentBoilerplate.nuspec"
-powershell -Command "(gc ShareableComponentBoilerplate.nuspec) -replace '-TagsHere-', '%Tags%' | Out-File -encoding ASCII ShareableComponentBoilerplate.nuspec"
+powershell -Command "(gc ShareableComponentBoilerplate.nuspec) -replace '--TagsHere--', '%Tags%' | Out-File -encoding ASCII ShareableComponentBoilerplate.nuspec"
 powershell -Command "(gc ShareableComponentBoilerplate.nuspec) -replace 'http://url', '%GitHubUrl%' | Out-File -encoding ASCII ShareableComponentBoilerplate.nuspec"
+powershell -Command "(gc ShareableComponentBoilerplate.nuspec) -replace '--CopyrightHere--', '%AssemblyCopyright%' | Out-File -encoding ASCII ShareableComponentBoilerplate.nuspec"
 rename ShareableComponentBoilerplate.nuspec %ToolName%.nuspec
 
 cd Properties
@@ -79,3 +82,4 @@ rename ShareableComponentBoilerplate.sln %ToolName%.sln
 cd targets
 powershell -Command "(gc Kentico.EmbeddedViews.targets) -replace 'ShareableComponentBoilerplate', '%ToolName%' | Out-File -encoding ASCII Kentico.EmbeddedViews.targets"
 cd..
+pause
