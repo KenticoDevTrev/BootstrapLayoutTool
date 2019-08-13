@@ -7,7 +7,7 @@
 		<authors>$author$</authors>
 		<owners>$author$</owners>
 		<projectUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool/tree/Bootstrap_StylizedZone</projectUrl>
-		<iconUrl>https://raw.githubusercontent.com/Kentico/devnet.kentico.com/master/marketplace/assets/generic-integration.png</iconUrl>
+		<iconUrl>https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico</iconUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>$description$</description>
 		<releaseNotes/>
