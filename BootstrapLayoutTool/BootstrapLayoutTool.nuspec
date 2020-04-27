@@ -6,11 +6,11 @@
 		<title>$title$</title>
 		<authors>$author$</authors>
 		<owners>$author$</owners>
-		<projectUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool/tree/PageBuilderContainerizedBootstrapLayout</projectUrl>
+		<projectUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool/tree/PageBuilderContainerizedBootstrapLayout3</projectUrl>
 		<iconUrl>https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico</iconUrl>
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>$description$</description>
-		<releaseNotes>Converted to SemVer format, added proper view for Page Builder Containered version</releaseNotes>
+		<releaseNotes>Created Bootstrap 3 version</releaseNotes>
 		<copyright>Copyright 2019</copyright>
 		<tags>Bootstrap Kentico Sections Layout</tags>
 		<dependencies>
@@ -20,6 +20,6 @@
 	</metadata>
 	<files>
 		<!-- Include the compiled views dll -->
-		<file src="bin\BootstrapLayoutTool.PageBuilderContainered.Kentico.MVC.Views.dll" target="lib\net461" />
+		<file src="bin\Bootstrap3LayoutTool.PageBuilderContainered.Kentico.MVC.Views.dll" target="lib\net461" />
 	</files>
 </package>

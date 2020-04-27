@@ -4,28 +4,25 @@ using PageBuilderContainers;
 
 namespace BootstrapLayoutTool
 {
-    public class Bootstrap4LayoutToolProperties : IPageBuilderContainerProperties, IHtmlBeforeAfterContainerProperties, ISectionProperties
+    public class Bootstrap3LayoutToolProperties : IPageBuilderContainerProperties, IHtmlBeforeAfterContainerProperties, ISectionProperties
     {
         const string AdditionalCSSToolTip = @"Additional Classes to append to the Column.  
 
-Bootstrap 4 Examples:
+Bootstrap 3 Examples
 Additional Sizes: col-[Size]-[Column Count]
-Visible on Size:  d-[Size]-[block|flex|inline|inline-block|inline-flex]
-Hide on Size: d-[Size]-none
-Offset: offset-[Size]-[Column Count]
-Ordering: order-[Size]-[Order Number 0 start]
-Padding: [p|pt|pr|pb|pl|px|py]-[Size]-[Number]
-Margin: [m|mt|mr|mb|ml|mx|my]-[Size]-[Number]
-Text: text-[Size]-[left|right|center], text-justify
+Visible on Size:  visible-[Size]-[block|inline|inline-block]
+Hide on Size: hidden-[Size]
+Offset: col-[Size]-offset-[Column Count]
+Ordering: col-[Size]-[push|pull]-[Column Count]
 
-Definitions: 
-Sizes: (empty for default/xs), sm-, md-, lg-, xl-
+Sizes: xs, sm, md, lg
 Column Count: 1-12
 
-NOTE: For default size, don't include the - between.  Ex: col-12 is default, col-sm-12 is small";
+Definitions: 
+Sizes: xs-, sm-, md-, lg-
+Column Count: 1-12";
 
-        const string ColumnWidthOptions = @"0;Flex
--1;1 Column (8%)
+        const string ColumnWidthOptions = @"-1;1 Column (8%)
 -2;2 Column (16%)
 -3;3 Column (25%)
 -4;4 Column (33%)
@@ -38,17 +35,16 @@ NOTE: For default size, don't include the - between.  Ex: col-12 is default, col
 -11;11 Column (92%)
 -12;12 Column (100%)";
 
-        const string PrependDataSource = @"col;Extra Small (0px to 575px)
-col-sm;Small (576px to 767px)
-col-md;Medium (768px to 991px)
-col-lg;Large (992px to 1199px)
-col-xl;Extra Large (1200px and larger)";
+        const string PrependDataSource = @"col-xs;Extra Small (0px to 767px)
+col-sm;Small (768px to 991px)
+col-md;Medium (992px to 1199px)
+col-lg;Large (1200px and larger)";
 
         const string ColumnWidthTooltip = @"The number of columns-spaces this column takes up.";
 
         const string DefaultColumnWidth = "-12";
 
-        public Bootstrap4LayoutToolProperties()
+        public Bootstrap3LayoutToolProperties()
         {
         }
 
@@ -57,7 +53,7 @@ col-xl;Extra Large (1200px and larger)";
 
         [EditingComponent(DropDownComponent.IDENTIFIER, Order = 1, Label = "Column CSS Prepend", Tooltip = "This will define what the default column sizing will be.  For example, if you select \"Small\" then your column widths will be col-sm-#")]
         [EditingComponentProperty(nameof(DropDownProperties.DataSource), PrependDataSource)]
-        public string ColumnCSSPrepend { get; set; } = "col-md";
+        public string ColumnCSSPrepend { get; set; } = "col-sm";
 
         [EditingComponent(TextInputComponent.IDENTIFIER, Order = 2, Label = "Container CSS", Tooltip = @"Additional CSS that will wrap the columns, this can be used to for styling purposes.
 

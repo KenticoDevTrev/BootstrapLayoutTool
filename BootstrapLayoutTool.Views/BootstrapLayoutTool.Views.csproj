@@ -12,8 +12,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BootstrapLayoutTool.Kentico.MVC.Views</RootNamespace>
-    <AssemblyName>BootstrapLayoutTool.PageBuilderContainered.Kentico.MVC.Views</AssemblyName>
+    <RootNamespace>Bootstrap3LayoutTool.Kentico.MVC.Views</RootNamespace>
+    <AssemblyName>Bootstrap3LayoutTool.PageBuilderContainered.Kentico.MVC.Views</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -558,7 +558,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
-    <EmbeddedResource Include="Views\Shared\Sections\BootstrapLayoutTool\_Bootstrap4LayoutTool.cshtml" />
+    <EmbeddedResource Include="Views\Shared\Sections\BootstrapLayoutTool\_Bootstrap3LayoutTool.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

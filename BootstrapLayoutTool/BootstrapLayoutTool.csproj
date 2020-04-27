@@ -7,8 +7,8 @@
     <ProjectGuid>{8CF57736-45EF-4472-BD82-BECCC2F838BB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BootstrapLayoutTool.Kentico.MVC</RootNamespace>
-    <AssemblyName>BootstrapLayoutTool.PageBuilderContainered.Kentico.MVC</AssemblyName>
+    <RootNamespace>Bootstrap3LayoutTool.Kentico.MVC</RootNamespace>
+    <AssemblyName>Bootstrap3LayoutTool.PageBuilderContainered.Kentico.MVC</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
