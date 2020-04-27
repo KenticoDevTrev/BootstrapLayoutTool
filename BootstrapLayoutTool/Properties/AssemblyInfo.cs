@@ -6,8 +6,8 @@ using CMS;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Bootstrap Layout Tool")]
-[assembly: AssemblyDescription("Bootstrap 4 based Section tool for Kentico MVC Page Builder")]
+[assembly: AssemblyTitle("Bootstrap 3 Layout Tool")]
+[assembly: AssemblyDescription("Bootstrap 3 based Section tool for Kentico MVC Page Builder")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Heartland Business Systems")]
 [assembly: AssemblyProduct("Bootstrap Layout Tool")]

@@ -155,6 +155,12 @@ Remove Gutters: no-gutters")]
         [EditingComponent(TextInputComponent.IDENTIFIER, Order = 26, Label = "12th Column Additional CSS", Tooltip = AdditionalCSSToolTip)]
         public string Column12AdditionalCSS { get; set; }
 
+        [EditingComponent(TextAreaComponent.IDENTIFIER, Order = 27, Label = "Html Before Section", Tooltip = "Places Html before the sections content")]
+        public string HtmlBefore { get; set; }
+
+        [EditingComponent(TextAreaComponent.IDENTIFIER, Order = 28, Label = "Html After Section", Tooltip = "Places Html after the sections content")]
+        public string HtmlAfter { get; set; }
+
         /// <summary>
         /// Helper to get the Column Width
         /// </summary>

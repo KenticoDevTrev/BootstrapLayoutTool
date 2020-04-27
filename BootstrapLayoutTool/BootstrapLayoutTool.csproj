@@ -7,8 +7,8 @@
     <ProjectGuid>{8CF57736-45EF-4472-BD82-BECCC2F838BB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BootstrapLayoutTool.Kentico.MVC</RootNamespace>
-    <AssemblyName>BootstrapLayoutTool.Kentico.MVC</AssemblyName>
+    <RootNamespace>Bootstrap3LayoutTool.Kentico.MVC</RootNamespace>
+    <AssemblyName>Bootstrap3LayoutTool.Kentico.MVC</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -539,9 +539,6 @@
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\AWSSDK.S3.3.1.9.0\analyzers\dotnet\cs\AWSSDK.S3.CodeAnalysis.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="SampleResource\SampleIncludedFile.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />

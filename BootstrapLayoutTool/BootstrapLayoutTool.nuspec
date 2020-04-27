@@ -10,7 +10,7 @@
     <iconUrl>https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes>Updated to SemVer assembly format, added Dependency</releaseNotes>
+    <releaseNotes>Added Bootstrap 3 version of the tool</releaseNotes>
     <copyright>Copyright 2019 Heartland Business Systems</copyright>
     <tags>Bootstrap Kentico Layout Section</tags>
 	<dependencies>
