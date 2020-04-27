@@ -558,7 +558,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Shared\Sections\BootstrapLayoutTool\_Bootstrap4LayoutTool.cshtml" />
+    <Content Include="Views\Shared\Sections\BootstrapLayoutTool\_Bootstrap3LayoutTool.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
