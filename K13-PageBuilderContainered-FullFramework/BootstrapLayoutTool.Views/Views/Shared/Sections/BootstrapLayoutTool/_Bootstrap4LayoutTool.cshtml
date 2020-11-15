@@ -1,0 +1,16 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+@using Kentico.Web.Mvc
+@using PageBuilderContainers
+
+@model ComponentViewModel<BootstrapLayoutTool.Bootstrap4LayoutToolProperties>
+
+@Html.PageBuilderContainerBefore(Model.Properties)
+<div class="row @Model.Properties.ContainerCSS">
+    @for (int Column = 1; Column <= Model.Properties.Columns; Column++)
+    {
+        <div class="@Model.Properties.GetColumnBootstrapClass(Column) @Model.Properties.GetColumnAdditionalCSS(Column)">
+            @Html.Kentico().WidgetZone()
+        </div>
+    }
+</div>
+@Html.PageBuilderContainerAfter(Model.Properties)

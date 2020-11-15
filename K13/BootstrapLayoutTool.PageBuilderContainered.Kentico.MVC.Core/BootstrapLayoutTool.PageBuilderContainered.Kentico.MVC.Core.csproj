@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <RootNamespace>BootstrapLayoutTool</RootNamespace>
+    <Version>13.0.0</Version>
+    <Authors>Trevor Fayas</Authors>
+    <Company>Heartland Business Systems</Company>
+    <Product>Bootstrap Layout Tool (+ Page Builder Containers)</Product>
+    <Description>Bootstrap Layout tool with Page Builder Containers support.  Must install the PageBuilderContainers.Kentico on the admin to leverage.</Description>
+    <PackageProjectUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool</RepositoryUrl>
+    <PackageIcon>favicon-96x96.png</PackageIcon>
+    <PackageTags>Kentico, Bootstrap</PackageTags>
+    <PackageReleaseNotes>Initial release for KX 13 MVC .Net Core</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Kentico.Xperience.AspNetCore.WebApp" Version="13.0.0" />
+    <PackageReference Include="PageBuilderContainers.Kentico.MVC.Core" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\tfayas\Desktop\favicon-96x96.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+
+</Project>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool</projectUrl>
+    <iconUrl>https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Updated for KX13 MVC .Net (full framework)</releaseNotes>
+    <copyright>Copyright 2020 Heartland Business Systems</copyright>
+    <tags>Bootstrap Kentico Layout Section</tags>
+	<dependencies>
+      <dependency id="Kentico.Xperience.AspNet.Mvc5" version="13.0.0" />
+      <dependency id="PageBuilderContainers.Kentico.MVC" version="13.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+  <!-- Include the compiled views dll -->
+  <file src="bin\BootstrapLayoutTool.Kentico.MVC.Views.dll" target = "lib\net48" />
+  </files>
+</package>

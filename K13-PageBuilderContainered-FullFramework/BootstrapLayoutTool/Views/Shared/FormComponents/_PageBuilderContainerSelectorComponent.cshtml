@@ -1,0 +1,6 @@
+﻿@using Kentico.Forms.Web.Mvc
+@model PageBuilderContainers.PageBuilderContainerSelectorComponent
+@{
+    var htmlAttributes = ViewData.Kentico().GetEditorHtmlAttributes();
+}
+@Html.DropDownListFor(x => x.SelectedValue, Model.Items, null, htmlAttributes)

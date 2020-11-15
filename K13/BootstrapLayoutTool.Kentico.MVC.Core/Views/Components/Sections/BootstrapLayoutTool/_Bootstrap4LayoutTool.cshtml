@@ -1,0 +1,14 @@
+﻿@using BootstrapLayoutTool
+@using Kentico.PageBuilder.Web.Mvc 
+@model ComponentViewModel<Bootstrap4LayoutToolProperties>
+
+@Html.Raw(Model.Properties.HtmlBefore)
+<div class="row @Model.Properties.ContainerCSS">
+    @for (int Column = 1; Column <= Model.Properties.Columns; Column++)
+    {
+        <div class="@Model.Properties.GetColumnBootstrapClass(Column) @Model.Properties.GetColumnAdditionalCSS(Column)">
+            <widget-zone />
+        </div>
+    }
+</div>
+@Html.Raw(Model.Properties.HtmlAfter)
