@@ -285,3 +285,4 @@ export*.zip
 # Removing nuget build file
 
 #Include Packages folder since Rx-Core is no longer retreivable through nuget
+/K13/BootstrapLayoutTool.PageBuilderContainered.Kentico.MVC.Core/BootstrapLayoutTool.PageBuilderContainered.Kentico.MVC.Core.sln
