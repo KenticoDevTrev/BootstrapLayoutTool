@@ -1,6 +1,6 @@
 ﻿using Kentico.Forms.Web.Mvc;
 
-[assembly: RegisterFormSection("Bootstrap.TwoColumn", "Two columns 50-50","", Description = "Organizes fields into two equal-width columns.", IconClass = "icon-l-cols-2")]
+[assembly: RegisterFormSection("Bootstrap.TwoColumn", "Two columns 50-50","~/Views/Components/FormSections/_BootstrapTwoColumnFormSection.cshtml", Description = "Organizes fields into two equal-width columns.", IconClass = "icon-l-cols-2")]
 [assembly: RegisterFormSection("Bootstrap.TwoColumn2575", "Two columns 25-75", "~/Views/Components/FormSections/_BootstrapTwoColumn2575FormSection.cshtml", Description = "Organizes fields into two columns, 25% and 75% widget.", IconClass = "icon-l-cols-20-80")]
 [assembly: RegisterFormSection("Bootstrap.TwoColumn7525", "Two columns 75-25", "~/Views/Components/FormSections/_BootstrapTwoColumn7525FormSection.cshtml", Description = "Organizes fields into two columns, 75% and 25% widget.", IconClass = "icon-l-cols-80-20")]
 [assembly: RegisterFormSection("Bootstrap.TwoColumn3366", "Two columns 33-66", "~/Views/Components/FormSections/_BootstrapTwoColumn3366FormSection.cshtml", Description = "Organizes fields into two columns, 33% and 66% widget.", IconClass = "icon-l-cols-30-70")]
