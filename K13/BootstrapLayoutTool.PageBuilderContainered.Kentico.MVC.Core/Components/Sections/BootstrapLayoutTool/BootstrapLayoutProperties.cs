@@ -4,6 +4,7 @@ using Kentico.PageBuilder.Web.Mvc;
 using PageBuilderContainers;
 
 [assembly: RegisterSection(Bootstrap4LayoutToolProperties.IDENTITY, "Bootstrap 4 Layout", propertiesType: typeof(Bootstrap4LayoutToolProperties), customViewName: Bootstrap4LayoutToolProperties.VIEWPATH, Description = "Allows you to add a Bootstrap 4 Section with fully configurable layout", IconClass = "icon-l-cols-25-50-25")]
+
 namespace BootstrapLayoutTool
 {
     public class Bootstrap4LayoutToolProperties : PageBuilderWithHtmlBeforeAfterSectionProperties, ISectionProperties

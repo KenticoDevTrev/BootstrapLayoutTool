@@ -4,25 +4,34 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <RootNamespace>BootstrapLayoutTool</RootNamespace>
-    <Version>13.0.0</Version>
+    <Version>13.31.0</Version>
     <Authors>Trevor Fayas</Authors>
     <Company>Heartland Business Systems</Company>
     <Product>Bootstrap Layout Tool (+ Page Builder Containers)</Product>
-    <Description>Bootstrap Layout tool with Page Builder Containers support.  Must install the PageBuilderContainers.Kentico on the admin to leverage.</Description>
+    <Description>The Bootstrap Layout tool Widget and Form Sections for Bootstrap 4 for Kentico 13 .net Core Refresh 2 (hotfix 31+) with Page Builder Containers support.  Must install the PageBuilderContainers.Kentico on the admin to leverage.</Description>
     <PackageProjectUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool</PackageProjectUrl>
     <RepositoryUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool</RepositoryUrl>
     <PackageIcon>favicon-96x96.png</PackageIcon>
     <PackageTags>Kentico, Bootstrap</PackageTags>
-    <PackageReleaseNotes>Initial release for KX 13 MVC .Net Core</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated to KX 13 Refresh 2 along with added dynamic Bootstrap Layout Form</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="wwwroot\css\Bootstrap4LayoutTool.admin.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
 
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Kentico.Xperience.AspNetCore.WebApp" Version="13.0.0" />
+    <PackageReference Include="Kentico.Xperience.AspNetCore.WebApp" Version="13.0.31" />
     <PackageReference Include="PageBuilderContainers.Kentico.MVC.Core" Version="13.0.3" />
   </ItemGroup>
 

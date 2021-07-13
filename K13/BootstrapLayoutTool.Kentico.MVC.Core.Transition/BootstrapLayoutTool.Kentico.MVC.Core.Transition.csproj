@@ -3,16 +3,16 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <PackageId>BootstrapLayoutTool.Kentico.MVC.Core</PackageId>
+    <PackageId>BootstrapLayoutTool.Kentico.MVC.Core.Transition</PackageId>
     <Version>13.31.0</Version>
     <Authors>Trevor Fayas</Authors>
     <Company>Heartland Business Systems</Company>
     <Product>Bootstrap Layout Tool</Product>
-    <Description>The Bootstrap Layout tool Widget and Form Sections for Bootstrap 4 for Kentico 13 .net Core Refresh 2 (hotfix 31+)</Description>
+    <Description>This package is ONLY required if you previously used the Bootstrap Layout Tool's form sections, as the normal package removed these in favor for the dynamic single form section.  You can use this package to include these older ones, then i would recommend migrating the old form sections to the dynamic 'Bootstrap 4 Layout' form section.</Description>
     <PackageIcon>favicon-96x96.png</PackageIcon>
     <RepositoryUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool</RepositoryUrl>
     <PackageTags>Kentico, Bootstrap, MVC, .net core</PackageTags>
-    <PackageReleaseNotes>Updated to Refresh 2 and added dynamic Bootstrap Layout section</PackageReleaseNotes>
+    <PackageReleaseNotes>This package is ONLY required if you previously used the Bootstrap Layout Tool's form sections, as the normal package removed these in favor for the dynamic single form section.  You can use this package to include these older ones, then i would recommend migrating the old form sections to the dynamic 'Bootstrap 4 Layout' form section.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RootNamespace>BootstrapLayoutTool</RootNamespace>
     <AssemblyVersion>13.31.0.0</AssemblyVersion>

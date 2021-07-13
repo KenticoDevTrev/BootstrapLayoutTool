@@ -5,10 +5,10 @@
 <containered container-model="Model.Properties">
     <div class="row @Model.Properties.ContainerCSS">
         @for (int Column = 1; Column <= Model.Properties.Columns; Column++)
-        {
-            <div class="@Model.Properties.GetColumnBootstrapClass(Column) @Model.Properties.GetColumnAdditionalCSS(Column)">
-                <widget-zone />
-            </div>
-        }
+    {
+        <div class="@Model.Properties.GetColumnBootstrapClass(Column) @Model.Properties.GetColumnAdditionalCSS(Column)">
+            <widget-zone />
+        </div>
+    }
     </div>
 </containered>

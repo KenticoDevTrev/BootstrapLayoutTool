@@ -1,0 +1,28 @@
+﻿@using Kentico.Forms.Web.Mvc
+@using Kentico.Web.Mvc
+@using CMS.Helpers;
+
+@if (VirtualContext.GetItem(VirtualContext.PARAM_FORM_BUILDER_URL) != null)
+{
+    <!-- Only load on form builder mode -->
+    <script type="text/javascript">
+        debugger;
+        if (!(document.querySelector("link[bootstrap4layouttool]"))) {
+            window.BootstrapLoaded = true;
+            var link = document.createElement("link");
+            link.type = "text/css";
+            link.setAttribute("bootstrap4layouttool", "");
+            link.rel = "stylesheet";
+            link.href = "/_content/BootstrapLayoutTool.Kentico.MVC.Core.Transition/css/Bootstrap4LayoutTool.admin.css";
+            document.head.appendChild(link);
+        }
+    </script>
+}
+<div class="row">
+    <div class="col-sm-9">
+        <form-zone />
+    </div>
+    <div class="col-sm-3">
+        <form-zone />
+    </div>
+</div>

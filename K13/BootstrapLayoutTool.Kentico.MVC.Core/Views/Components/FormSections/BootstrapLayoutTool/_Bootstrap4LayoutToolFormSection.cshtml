@@ -1,0 +1,44 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+@using Kentico.Forms.Web.Mvc
+@using Kentico.Web.Mvc
+@using Kentico.Content.Web.Mvc;
+@using System;
+@using Microsoft.AspNetCore.Http;
+@using BootstrapLayoutTool;
+@using CMS.Helpers;
+@inject IHttpContextAccessor accessor
+@model FormSectionViewModel<Bootstrap4LayoutToolFormSectionProperties>
+
+@if (VirtualContext.GetItem(VirtualContext.PARAM_FORM_BUILDER_URL) != null)
+{
+    <!-- Only load on form builder mode -->
+    <script type="text/javascript">
+        debugger;
+        if (!(document.querySelector("link[bootstrap4layouttool]"))) {
+            window.BootstrapLoaded = true;
+            var link = document.createElement("link");
+            link.type = "text/css";
+            link.setAttribute("bootstrap4layouttool", "");
+            link.rel = "stylesheet";
+            link.href = "/_content/BootstrapLayoutTool.Kentico.MVC.Core/css/Bootstrap4LayoutTool.admin.css";
+            document.head.appendChild(link);
+        }
+    </script>
+}
+@Html.Raw(Model.Properties.HtmlBefore)
+<div class="row @Model.Properties.ContainerCSS @Model.Properties.ContainerFormGroupCSS">
+    @for (int Column = 1; Column <= Model.Properties.Columns; Column++)
+    {
+        if (Model.Properties.ShowColumnsDiv(Column))
+        {
+            <div class="@Model.Properties.GetColumnBootstrapClass(Column) @Model.Properties.GetColumnAdditionalCSS(Column)">
+                <form-zone />
+            </div>
+        }
+        else
+        {
+            <form-zone />
+        }
+    }
+    </div>
+    @Html.Raw(Model.Properties.HtmlAfter)
