@@ -7,17 +7,24 @@ Bootstrap Layout Tool for Kentico MVC, allows you to add Sections with various c
 
 This is also available in a Page Builder Containered version at `BootstrapLayoutTool.PageBuilderContainered.Kentico.MVC` or `BootstrapLayoutTool.PageBuilderContainered.Kentico.MVC.Core`
 
-# Usage
+# Usage Page Builder
 1. On a Page where Page Builder is Enabled, add a new Section or configure the current section and select the Bootstrap 4 Layout
 1. Click on the Section Properties Configuration Icon (Cogwheel) and Configure as desired.
+
+# Usage Form Builder
+1. On the Form Builder in the Admin UI, add a new Section and select the Bootstrap 4 Layout
+1. Click on the Section Properties Configuration Icon (Cogwheel) and Configure as desired
 
 *Note: You can hover over the various field's input's to get tooltips such as Bootstrap 4 class name conventions*
 
 # Form Sections
 For .Net Core KX 13 Refresh 2 (hotfix 31), this tool now has a dynamic Bootstrap Layout Form Section.  This will allow you to more easily implement .net core.  I only created this on the .net Core version for now, if you need this for Xperience 13 .net 4.8, please message me and i'll convert it (pain to do, so hoping to avoid).
 
+## Upgrading from 13.0.X
+If you used the Bootstrap Layout Tool's form sections that were in the previous version, you will need to install the [BootstrapLayoutTool.Kentico.MVC.Core.Transition](https://www.nuget.org/packages/BootstrapLayoutTool.Kentico.MVC.Core.Transition/) package which contains the 'old' non dynamic form layouts. I would then switch these old ones to use the new Bootstrap 4 Layout form section, then uninstall the transition nuget package.  This is only because Xperience throws an error if you try to edit a form and the form sections are missing.
+
 # Form Widget Overrides
-Included in the repo is a class you can include on your MVC solution to fix up the form widget rendering to be more bootstrap orientated.  You can copy and paste and the modify this as you need!
+Included in the repo is a [class you can include on your MVC solution](https://github.com/KenticoDevTrev/BootstrapLayoutTool/blob/master/Bootstrap-FormWidget-Customization.cs) to fix up the form widget rendering to be more bootstrap orientated.  You can copy and paste and the modify this as you need.  It includes some samples of how to do normal, inline, and horizontal forms.
 
 # Contributions, but fixes and License
 Feel free to Fork and submit pull requests to contribute.
