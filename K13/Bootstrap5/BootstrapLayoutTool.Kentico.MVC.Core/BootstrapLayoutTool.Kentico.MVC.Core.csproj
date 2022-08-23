@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <PackageId>XperienceCommunity.Bootstrap5LayoutTool</PackageId>
+    <Version>13.31.0</Version>
+    <Authors>Trevor Fayas</Authors>
+    <Company>Heartland Business Systems</Company>
+    <Product>Bootstrap 5 Layout Tool</Product>
+    <Description>The Bootstrap Layout tool Widget and Form Sections for Bootstrap 5 for Kentico 13 .net Core Refresh 2 (hotfix 31+)</Description>
+    <PackageIcon>hbs-favicon-96x96.png</PackageIcon>
+    <RepositoryUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool</RepositoryUrl>
+    <PackageTags>Kentico, Bootstrap, MVC, .net core</PackageTags>
+    <PackageReleaseNotes>Updated to Refresh 2 and added dynamic Bootstrap Layout section</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RootNamespace>BootstrapLayoutTool</RootNamespace>
+    <AssemblyVersion>13.31.0.0</AssemblyVersion>
+    <FileVersion>13.31.0.0</FileVersion>
+    <AssemblyName>XperienceCommunity.Bootstrap5LayoutTool</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\hbs-favicon-96x96.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <EmbeddedResource Include="wwwroot\**\*" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Kentico.Xperience.AspNetCore.WebApp" Version="13.0.31" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <EmbeddedResource Update="wwwroot\css\Bootstrap5LayoutTool.admin.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

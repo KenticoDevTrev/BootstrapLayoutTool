@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <RootNamespace>BootstrapLayoutTool</RootNamespace>
+    <Version>13.31.0</Version>
+    <Authors>Trevor Fayas</Authors>
+    <Company>Heartland Business Systems</Company>
+    <Product>Bootstrap Layout Tool (+ Page Builder Containers)</Product>
+    <Description>The Bootstrap Layout tool Widget and Form Sections for Bootstrap 5 for Kentico 13 .net Core Refresh 2 (hotfix 31+) with Page Builder Containers support.  Must install the PageBuilderContainers.Kentico on the admin to leverage.</Description>
+    <PackageProjectUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/KenticoDevTrev/BootstrapLayoutTool</RepositoryUrl>
+    <PackageIcon>hbs-favicon-96x96.png</PackageIcon>
+    <PackageTags>Kentico, Bootstrap</PackageTags>
+    <PackageReleaseNotes>The Bootstrap Layout tool Widget and Form Sections for Bootstrap 5 for Kentico 13 .net Core Refresh 2 (hotfix 31+) with Page Builder Containers support.  Must install the PageBuilderContainers.Kentico on the admin to leverage.</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyName>XperienceCommunity.Bootstrap5LayoutTool.PageBuilderContainered</AssemblyName>
+    <PackageId>XperienceCommunity.Bootstrap5LayoutTool.PageBuilderContainered</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="wwwroot\css\Bootstrap5LayoutTool.admin.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Kentico.Xperience.AspNetCore.WebApp" Version="13.0.31" />
+    <PackageReference Include="PageBuilderContainers.Kentico.MVC.Core" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\hbs-favicon-96x96.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+
+</Project>

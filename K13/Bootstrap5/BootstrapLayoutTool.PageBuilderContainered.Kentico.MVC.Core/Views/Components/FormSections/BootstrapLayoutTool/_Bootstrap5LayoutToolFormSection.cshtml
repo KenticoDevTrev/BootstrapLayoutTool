@@ -1,0 +1,43 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+@using Kentico.Forms.Web.Mvc
+@using Kentico.Web.Mvc
+@using Kentico.Content.Web.Mvc;
+@using System;
+@using Microsoft.AspNetCore.Http;
+@using BootstrapLayoutTool;
+@using CMS.Helpers;
+@inject IHttpContextAccessor accessor
+@model FormSectionViewModel<Bootstrap5LayoutToolFormSectionProperties>
+
+@if (VirtualContext.GetItem(VirtualContext.PARAM_FORM_BUILDER_URL) != null)
+{
+    <!-- Only load on form builder mode -->
+    <script type="text/javascript">
+        if (!(document.querySelector("link[bootstrap5layouttool]"))) {
+            window.BootstrapLoaded = true;
+            var link = document.createElement("link");
+            link.type = "text/css";
+            link.setAttribute("bootstrap5layouttool", "");
+            link.rel = "stylesheet";
+            link.href = "/_content/XperienceCommunity.Bootstrap5LayoutTool.PageBuilderContainered/css/Bootstrap5LayoutTool.admin.css";
+            document.head.appendChild(link);
+        }
+    </script>
+}
+<containered container-model="Model.Properties">
+    <div class="row @Model.Properties.ContainerCSS @Model.Properties.ContainerFormGroupCSS">
+        @for (int Column = 1; Column <= Model.Properties.Columns; Column++)
+        {
+            if (Model.Properties.ShowColumnsDiv(Column))
+            {
+                <div class="@Model.Properties.GetColumnBootstrapClass(Column) @Model.Properties.GetColumnAdditionalCSS(Column)">
+                    <form-zone />
+                </div>
+            }
+            else
+            {
+                <form-zone />
+            }
+        }
+    </div>
+</containered>

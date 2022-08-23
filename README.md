@@ -2,13 +2,19 @@
 # BootstrapLayoutTool
 Bootstrap Layout Tool for Kentico MVC, allows you to add Sections with various columns and css classes for Bootstrap 4 sites.
 
-# Installation
-1. Install the `BootstrapLayoutTool.Kentico.MVC` or `BootstrapLayoutTool.Kentico.MVC.Core`NuGet Package to your MVC Site
+# Installation (Bootstrap 5, .net Core support only)
+1. Install the `XperienceCommunity.Bootstrap5LayoutTool`  to your MVC Site
+
+This is also available in a Page Builder Containered version at `XperienceCommunity.Bootstrap5Layout.PageBuilderContainered`
+
+# Installation (Bootstrap 4, .net Core or .net 4.8)
+1. Install the `BootstrapLayoutTool.Kentico.MVC` for .net 4.8 Framework or `BootstrapLayoutTool.Kentico.MVC.Core` for .net Core NuGet Package to your MVC Site
 
 This is also available in a Page Builder Containered version at `BootstrapLayoutTool.PageBuilderContainered.Kentico.MVC` or `BootstrapLayoutTool.PageBuilderContainered.Kentico.MVC.Core`
 
+
 # Usage
-1. On a Page where Page Builder is Enabled, add a new Section or configure the current section and select the Bootstrap 4 Layout
+1. On a Page where Page Builder is Enabled, add a new Section or configure the current section and select the Bootstrap 4 Layout / Bootstrap 5 Layout
 1. Click on the Section Properties Configuration Icon (Cogwheel) and Configure as desired.
 
 *Note: You can hover over the various field's input's to get tooltips such as Bootstrap 4 class name conventions*
