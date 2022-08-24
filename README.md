@@ -14,7 +14,7 @@ This is also available in a Page Builder Containered version at `BootstrapLayout
 
 # Usage
 1. On a Page where Page Builder is Enabled, add a new Section or configure the current section and select the Bootstrap 4 Layout / Bootstrap 5 Layout
-=======
+
 # Usage Page Builder
 1. On a Page where Page Builder is Enabled, add a new Section or configure the current section and select the Bootstrap 4 Layout
 1. Click on the Section Properties Configuration Icon (Cogwheel) and Configure as desired.
