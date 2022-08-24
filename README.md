@@ -12,14 +12,11 @@ This is also available in a Page Builder Containered version at `XperienceCommun
 
 This is also available in a Page Builder Containered version at `BootstrapLayoutTool.PageBuilderContainered.Kentico.MVC` or `BootstrapLayoutTool.PageBuilderContainered.Kentico.MVC.Core`
 
-<<<<<<< HEAD
-
 # Usage
 1. On a Page where Page Builder is Enabled, add a new Section or configure the current section and select the Bootstrap 4 Layout / Bootstrap 5 Layout
 =======
 # Usage Page Builder
 1. On a Page where Page Builder is Enabled, add a new Section or configure the current section and select the Bootstrap 4 Layout
->>>>>>> 0064653f5391d727307b4e52ecc79eb80feba0d5
 1. Click on the Section Properties Configuration Icon (Cogwheel) and Configure as desired.
 
 # Usage Form Builder
